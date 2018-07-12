@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/aplos</property>
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <mapping class="com.aplos.domain.Address"/>
+    <mapping class="com.aplos.domain.Client"/>
+    <mapping class="com.aplos.domain.ClientAddress"/>
+    <mapping class="com.aplos.domain.ClientCountry"/>
+    <mapping class="com.aplos.domain.ClientCurrency"/>
+    <mapping class="com.aplos.domain.ClientRole"/>
+    <mapping class="com.aplos.domain.ClientRolePrivilage"/>
+    <mapping class="com.aplos.domain.ClientUser"/>
+    <mapping class="com.aplos.domain.Country"/>
+    <mapping class="com.aplos.domain.Currency"/>
+    <mapping class="com.aplos.domain.Privilage"/>
+    <mapping class="com.aplos.domain.Role"/>
+    <mapping class="com.aplos.domain.User"/>
+    <mapping class="com.aplos.domain.UserAddress"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

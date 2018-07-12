@@ -1,0 +1,10 @@
+*.prefs
+.idea/
+.idea/*
+*.iml
+.classpath
+.project
+.settings/
+target/
+/idea/*
+*default.properties
